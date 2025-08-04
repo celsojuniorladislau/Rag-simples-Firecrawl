@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "agente-de-documentos-rag"
+version = "0.1.0"
+description = ""
+authors = ["celsojuniorladislau <celsojuniorladislau@gmail.com>"]
+readme = "README.md"
+packages = [{include = "docstoteles"}]
+
+[tool.poetry.dependencies]
+python = ">=3.13,<4.0"
+streamlit = ">=1.47.1,<2.0.0"
+python-dotenv = ">=1.1.1,<2.0.0"
+firecrawl = ">=2.16.3,<3.0.0"
+langchain = ">=0.3.27,<0.4.0"
+groq = ">=0.30.0,<0.31.0"
+langchain-community = ">=0.3.27,<0.4.0"
+langchain-groq = ">=0.3.6,<0.4.0"
+faiss-cpu = ">=1.11.0.post1,<2.0.0"
+sentence-transformers = ">=5.0.0,<6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
